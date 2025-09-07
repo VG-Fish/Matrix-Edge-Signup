@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ChangeEvent } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaXTwitter } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 import { Input } from "@/components/ui/input";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { EnhancedButton } from "@/components/ui/enhanced-btn";
@@ -60,19 +60,12 @@ export default function Form({
       <motion.div
         variants={itemVariants}
         className="mt-4 flex w-full items-center justify-center gap-1 text-muted-foreground">
-        <p>For any queries, reach out at </p>
+        <p>For any queries, reach out to </p>
         <Link
-          href="https://x.com/blakssh"
+          href="mailto:MatrixEdgeTherapeutics @Gmail.com"
           rel="noopener noreferrer"
           target="_blank">
-          <FaXTwitter className="h-4 w-4 transition-all duration-200 ease-linear hover:text-yellow-200" />
-        </Link>
-        or
-        <Link
-          href="https://github.com/lakshaybhushan"
-          rel="noopener noreferrer"
-          target="_blank">
-          <FaGithub className="ml-0.5 h-5 w-5 transition-all duration-200 ease-linear hover:text-yellow-200" />
+          <MdEmail size={24} className="h-4 w-4 transition-all duration-200 ease-linear hover:text-yellow-200" />
         </Link>
       </motion.div>
     </motion.div>
