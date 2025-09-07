@@ -62,7 +62,7 @@ export default function Form({
         className="mt-4 flex w-full items-center justify-center gap-1 text-muted-foreground">
         <p>For any queries, reach out to </p>
         <Link
-          href="mailto:MatrixEdgeTherapeutics @Gmail.com"
+          href="mailto:MatrixEdgeTherapeutics@gmail.com"
           rel="noopener noreferrer"
           target="_blank">
           <MdEmail size={24} className="h-4 w-4 transition-all duration-200 ease-linear hover:text-yellow-200" />
