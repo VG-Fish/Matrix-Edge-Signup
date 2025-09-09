@@ -39,7 +39,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
   const { email, firstname } = await request.json();
 
   const { data, error } = await resend.emails.send({
-    from: " Elaine <elaine@matrixedgetherapeutics.com",
+    from: "Elaine <elaine@matrixedgetherapeutics.com",
     to: [email],
     subject: "Thank you for wailisting Matrix Edge Therapeutics!",
     reply_to: "elaine@matrixedgetherapeutics.com",
